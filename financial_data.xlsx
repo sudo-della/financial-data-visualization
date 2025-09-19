@@ -1,0 +1,11 @@
+import pandas as pandas
+
+data = {
+    "Name":["Daniella", "Daniella", "Daniella", "Daniella", "Nelly", "Nelly", "Nelly", "Koketso", "Koketso", "Koketso"],
+    "Year":[2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025],
+    "Month": ["Jan","Feb", "Mar", "Jan","Feb", "Mar", "Jan","Feb", "Mar"],
+    "Amount": [1200, 900, 1500, 2000, 1800, 3000, 2200, 800, 4000]
+}
+
+df = pd.DataFrame(data)
+df.to_excel("financial_data.xlsx", index=False)
