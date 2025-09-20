@@ -1,4 +1,4 @@
-import pandas as pandas
+import pandas as pd
 
 data = {
     "Name":["Daniella", "Daniella", "Daniella", "Daniella", "Nelly", "Nelly", "Nelly", "Koketso", "Koketso", "Koketso"],
@@ -8,4 +8,6 @@ data = {
 }
 
 df = pd.DataFrame(data)
-df.to_excel("financial_data.xlsx", index=False)
+df.to_excel("financial_data.xlsx", index=False, engine='openpyxl')
+
+print("Excel file created successfully!")
