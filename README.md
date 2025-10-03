@@ -1,1 +1,1 @@
-# financial-data-visualization
+# Financial Data Visualization
